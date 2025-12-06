@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="hed1">Hello!</h1>
+    <button class="btn">Clicky Click</button>
+    <h1 class="cntr">0</h1>
+    <div class="img" style="background-image: url(depresso.jpg); height: 200px; width: 350px; background-size: 100% 100%;"></div>
+    <script>
+        let btn = document.querySelector(".btn");
+        let hed1 = document.querySelector(".hed1");
+        let cntr = document.querySelector(".cntr");
+        let num = 0;
+        let img = document.querySelector(".img")
+        btn.onclick = function(){
+            hed1.textContent = "Goodbye...";
+            num = num+1;
+            cntr.textContent = num;
+        }
+        img.onclick = function(){
+            img.style.backgroundImage = "url(happ.webp)";
+        }
+    </script>
+</body>
+</html>
